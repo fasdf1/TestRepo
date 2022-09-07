@@ -39,12 +39,12 @@ public class FileController {
 
     }
 
-    @GetMapping("/excel")
+    @GetMapping("/admin")
     public String main() { // 1
         return "excel";
     }
 
-    @PostMapping("/excel/read")
+    @PostMapping("/postExcel")
     public String register(@RequestParam("file") MultipartFile file, Model model) throws IOException { // 2
 
         List<ExcelData> dataList = new ArrayList<>();
