@@ -44,7 +44,7 @@ public class ProductController {
     // 등록 버튼 누르면 Post-> admin/postProducts 연결
     // 상품 목록 초기화 버튼 누르면 Delete -> admin/deleteProducts
 
-    @PostMapping("/postProducts")
+    @PostMapping("/postProducts") //
     public String postProducts(@RequestParam("file") MultipartFile file) throws IOException{
 
         //productRepository.deleteAll(); // 우선 기본 정보들은 삭제
